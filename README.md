@@ -1,7 +1,5 @@
-**Что такое Page Object Model?**
-
-Page Object Model или кратко Page Object — это паттерн программирования, который очень популярен в автоматизации тестирования и является одним из стандартов при автоматизации тестирования веб-продуктов. Это также один из удобных способов структурировать свой код таким образом, чтобы его было удобно поддерживать, менять и работать с ним.
-
-Основная идея состоит в том, что каждую страницу веб-приложения можно описать в виде объекта класса. Способы взаимодействия пользователя со страницей можно описать с помощью методов класса. В идеале тест, который будет использовать Page Object, должен описывать бизнес-логику тестового сценария и скрывать Selenium-методы взаимодействия с браузером и страницей. При изменениях в верстке страницы не придется исправлять тесты, связанные с этой страницей. Вместо этого нужно будет поправить только класс, описывающий страницу.
-
-То есть здесь применяются те же принципы, что и в разработке: мы хотим повысить читаемость кода и вынести в абстрактные методы все детали. Тесты должны быть просто и понятно написаны, а повторяющиеся куски кода выделены в отдельные функции. В Page Object мы отделяем логику действий, например, авторизовать пользователя, от конкретной реализации (найти поле почты, ввести туда данные, найти поле пароля, ввести туда данные, найти кнопку и т.д.). 
+# test_automation_project
+It's my project with automated tests. The purpose of the project is to demonstrate my skills to create automated tests in Python, my knowledge of Selenium Webdriver, Python, PyTest framework and Page Object pattern.
+The tests are written to check how the functionality of the "Oscar Sandbox" online store (http://selenium1py.pythonanywhere.com/en-gb/) works. 
+The project includes automated tests with parameterization (tests are available for different languages and for two browsers Chrome and Firefox, test_guest_can_add_product_to_basket is available for ten different URL).
+All tests work. Test that fail are marked with @pytest.mark.xfail.
